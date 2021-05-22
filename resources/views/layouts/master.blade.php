@@ -10,16 +10,35 @@
     <title>{{ config('app.name', 'SIG') }}</title>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{{ asset('js/welcome.js') }}" defer></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-
+    
     <!-- Styles -->
     <link href="{{ asset('css/welcome.css') }}" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="{{asset('bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+    
+    
 </head>
 <body>  
     @yield('content')
+    <script src="{{asset('bootstrap/js/bootstrap.min.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script>
+    function myFunction() {
+        var x = document.getElementById("mySelect").value;
+        // document.getElementById("demo").innerHTML = "You selected: " + x;
+        var y = document.getElementById("demo");
+        if (x == "umkm") {
+            y.style.display = "block";
+        }else{
+            y.style.display = "none";
+        }
+    }
+</script>
 </body>
 </html>
