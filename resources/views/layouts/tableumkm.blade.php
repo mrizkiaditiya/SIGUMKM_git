@@ -1,10 +1,14 @@
+@extends('../admin.layout')
+@section('content')
 <table class="table table-striped table-dark">
   <thead>
     <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
+      <th scope="col">no</th>
+      <th scope="col">Toko</th>
+      <th scope="col">alamat</th>
+      <th scope="col">lat</th>
+      <th scope="col">long</th>
+      <th scope="col">gambar</th>
     </tr>
   </thead>
   <tbody>
@@ -28,3 +32,4 @@
     </tr>
   </tbody>
 </table>
+@endsection

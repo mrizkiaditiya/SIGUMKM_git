@@ -33,7 +33,7 @@
             </a>
             <ul class="treeview-menu">
             <li><a href="mapsumkm"><i class="fa fa-circle-o"></i> Maps</a></li>
-            <li><a href="../UI/general.html"><i class="fa fa-circle-o"></i> Table UMKM</a></li>
+            <li><a href="tableumkm"><i class="fa fa-circle-o"></i> Table UMKM</a></li>
             </ul>
           </a>
           

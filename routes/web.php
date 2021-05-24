@@ -24,6 +24,7 @@ Route::group(
         Route::get('dashboard', 'DashboardController@index');
         Route::resource('categories', 'CategoryController');
         Route::get('mapsumkm', 'MapsController@index');
+        Route::get('tableumkm', 'TablemapsController@index');
        
     });
 
