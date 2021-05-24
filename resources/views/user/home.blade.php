@@ -160,13 +160,7 @@
                         <img src="user/images/SIG_1.jpg" class="img-responsive" alt="">
                     </div>
                     <div class="core-slider_item">
-                        <img src="user/images/b2.jpg" class="img-responsive" alt="">
-                    </div>
-                    <div class="core-slider_item">
-                        <img src="user/images/b3.jpg" class="img-responsive" alt="">
-                    </div>
-                    <div class="core-slider_item">
-                        <img src="user/images/b4.jpg" class="img-responsive" alt="">
+                        <img src="user/images/SIG_2.jpg" class="img-responsive" alt="">
                     </div>
                 </div>
             </div>
@@ -196,9 +190,9 @@
         <div class="container">
             <div class="col-md-6 ban-bottom">
                 <div class="ban-top">
-                    <img src="user/images/p1.jpg" class="img-responsive" alt="" />
+                    <img src="user/images/category1.jpg" class="img-responsive" alt="" />
                     <div class="ban-text">
-                        <h4>Men’s Clothing</h4>
+                        <h4>Makanan</h4>
                     </div>
                     <div class="ban-text2 hvr-sweep-to-top">
                         <h4>50% <span>Off/-</span></h4>
@@ -207,23 +201,23 @@
             </div>
             <div class="col-md-6 ban-bottom3">
                 <div class="ban-top">
-                    <img src="user/images/p2.jpg" class="img-responsive" alt="" />
+                    <img src="user/images/category2.jpg" class="img-responsive" alt="" />
                     <div class="ban-text1">
-                        <h4>Women's Clothing</h4>
+                        <h4>Kerajinan Tangan</h4>
                     </div>
                 </div>
                 <div class="ban-img">
                     <div class=" ban-bottom1">
                         <div class="ban-top">
-                            <img src="user/images/p3.jpg" class="img-responsive" alt="" />
+                            <img src="user/images/category3.jpg" class="img-responsive" alt="" />
                             <div class="ban-text1">
-                                <h4>T - Shirt</h4>
+                                <h4>Minuman</h4>
                             </div>
                         </div>
                     </div>
                     <div class="ban-bottom2">
                         <div class="ban-top">
-                            <img src="user/images/p4.jpg" class="img-responsive" alt="" />
+                            <img src="user/images/category4.jpg" class="img-responsive" alt="" />
                             <div class="ban-text1">
                                 <h4>Hand Bag</h4>
                             </div>
