@@ -14,14 +14,21 @@
 Route::get('/', function () {
     return view('welcome');
 });
+// Route::get('/maps', function () {
+//     return view('layouts.home');
+// });
 
 Route::group(
 	['namespace' => 'Admin', 'prefix' => 'admin', 'middleware' => ['auth']],
 	function () {
         Route::get('dashboard', 'DashboardController@index');
         Route::resource('categories', 'CategoryController');
+        Route::get('mapsumkm', 'MapsController@index');
+       
     });
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+// Route::get('admin/mapsumkm', 'mapscontroller@index');
+

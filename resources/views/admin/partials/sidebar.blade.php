@@ -27,6 +27,14 @@
         <li class="treeview">
           <a href="#">
             <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+            </a>
+            <ul class="treeview-menu">
+            <li><a href="mapsumkm"><i class="fa fa-circle-o"></i> Maps</a></li>
+            <li><a href="../UI/general.html"><i class="fa fa-circle-o"></i> Table UMKM</a></li>
+            </ul>
           </a>
           
         </li>

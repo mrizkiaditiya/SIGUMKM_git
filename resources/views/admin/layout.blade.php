@@ -27,6 +27,9 @@
 
   <!-- Google Font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" type="text/css" href="/maps/maps.css" />
+    <script src="/maps/maps.js"></script>  
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <!-- Site wrapper -->
@@ -413,6 +416,10 @@
 <script src="/adminlte/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="/adminlte/js/demo.js"></script>
+<!-- <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAe4n4vJ_99S_OPiO8TYW7bM2Ddkw7w10&callback=initialize&libraries=&v=weekly"
+      async
+></script> -->
 <script>
   $(document).ready(function () {
     $('.sidebar-menu').tree()
