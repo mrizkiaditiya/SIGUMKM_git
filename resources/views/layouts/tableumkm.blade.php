@@ -4,11 +4,12 @@
   <thead>
     <tr>
       <th scope="col">no</th>
-      <th scope="col">Toko</th>
-      <th scope="col">alamat</th>
-      <th scope="col">lat</th>
-      <th scope="col">long</th>
+      <th scope="col">Nama UMKM</th>
+      <th scope="col">Alamat</th>
+      <th scope="col">latitude</th>
+      <th scope="col">longitude</th>
       <th scope="col">gambar</th>
+      <th scope="col">Aksi</th>
     </tr>
   </thead>
   <tbody>
