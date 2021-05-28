@@ -1,59 +1,7 @@
 @extends('../admin.layout')
-
-@section('content')
-
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-4">
-            <h2>Google Map</h2>
-            @if (session('success'))
-                <div class="alert alert-success">
-                    {{ session('success') }}
-                </div>
-            @endif
-            @if ($errors->any())
-                <div class="alert alert-danger">
-                    <ul>
-                        @foreach ($errors->all() as $error)
-                            <li>{{ $error }}</li>
-                        @endforeach
-                    </ul>
-                </div>
-            @endif
-           <form action="{{route('admin.store')}}" method="post" id="boxmap">
-           @csrf
-                <div class="form-group">
-                    <label for="title">Title</label>
-                    <input type="text" name="title" placeholder="Title" class="form-control"/>
-                </div>
-                <div class="form-group">
-                    <label for="title">Description</label>
-                    <input type="text" name="description" placeholder="Description" class="form-control"/>
-                </div>
-                <div class="form-group">
-                    <label for="lat">lat</label>
-                    <input type="text" name="lat" placeholder="lat" class="form-control"/>
-                </div>
-                <div class="form-group">
-                    <label for="lng">lng</label>
-                    <input type="text" name="lng" placeholder="lng" class="form-control"/>
-                </div>
-                <div class="form-group">
-                    <input type="submit" name="submit" value="Add Map" class="btn btn-success"/>
-                </div>
-            </form>
-        </div>
-        <div class="col-md-8">
-            <h2>Show google Map</h2>
-            <div id="map"></div>       
-        </div>
-    </div>
-</div>
-@endsection
-
 @section('script')
 <script>
-        mapboxgl.accessToken = 'pk.eyJ1IjoiNDYxNzAxMDA1MCIsImEiOiJja3A2Z2dhajUyM2h0MnBtd2F3ZmtoeTFwIn0.wB--Q8OSmzu_wfa17P2shA';
+        mapboxgl.accessToken = 'pk.eyJ1Ijoic2tpcHBlcmhvYSIsImEiOiJjazE2MjNqMjkxMTljM2luejl0aGRyOTAxIn0.Wyvywisw6bsheh7wJZcq3Q';
         var map = new mapboxgl.Map({
           container: 'map',
           style: 'mapbox://styles/mapbox/streets-v11',
@@ -93,4 +41,53 @@
             cursor: pointer; 
         }
 </style>
+@endsection
+@section('content')
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-4">
+            <h2>Google Map</h2>
+            @if (session('success'))
+                <div class="alert alert-success">
+                    {{ session('success') }}
+                </div>
+            @endif
+            @if ($errors->any())
+                <div class="alert alert-danger">
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
+           <form action="{{route('google.map.store')}}" method="post" id="boxmap">
+           @csrf
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    <input type="text" name="title" placeholder="Title" class="form-control"/>
+                </div>
+                <div class="form-group">
+                    <label for="title">Description</label>
+                    <input type="text" name="description" placeholder="Description" class="form-control"/>
+                </div>
+                <div class="form-group">
+                    <label for="lat">lat</label>
+                    <input type="text" name="lat" placeholder="lat" class="form-control"/>
+                </div>
+                <div class="form-group">
+                    <label for="lng">lng</label>
+                    <input type="text" name="lng" placeholder="lng" class="form-control"/>
+                </div>
+                <div class="form-group">
+                    <input type="submit" name="submit" value="Add Map" class="btn btn-success"/>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-8">
+            <h2>Show google Map</h2>
+            <div id="map"></div>       
+        </div>
+    </div>
+</div>
 @endsection

@@ -25,6 +25,7 @@ Route::group(
         Route::resource('categories', 'CategoryController');
         Route::get('mapsumkm', 'MapsController@index');
         Route::get('tableumkm', 'TablemapsController@index');
+        Route::post('post','MapsController@store')->name('admin.store');
        
     });
 
@@ -32,4 +33,9 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 // Route::get('admin/mapsumkm', 'mapscontroller@index');
+// Route::post('/post','MapsController@store')->name('google.map.store');
 
+// Route::prefix('google-map')->group(function () {
+//     Route::get('/','GoogleMapController@index')->name('google.map.index');
+//     Route::post('/post','GoogleMapController@store')->name('google.map.store');
+// });

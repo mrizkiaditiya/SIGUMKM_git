@@ -1,18 +1,15 @@
 <?php
 
-namespace App\Http\Controllers\Admin;
+namespace App\Http\Controllers;
 
-use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Http\Requests\FormMapRequest;
 use App\Boxmap;
 
-class MapsController extends Controller
+class GoogleMapController extends Controller
 {
-    //
-    public function index()
+     public function index()
     {
-
         $boxmap = Boxmap::all();
 
         $dataMap  = Array();
@@ -28,15 +25,31 @@ class MapsController extends Controller
                 array_push($dataMap['features'],$feaures);
 
        }
-        return View('layouts.mapsumkm')->with('dataArray',json_encode($dataMap));
-   
-        
+        return View('pages.google-map')->with('dataArray',json_encode($dataMap));
     }
+
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function create()
+    {
+        //
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
     public function store(FormMapRequest $request)
     {
        $validated = $request->validated();
        Boxmap::create($request->all());
-       return redirect('/admin/mapsumkm')->with('success',"Add map success!");
+       return redirect('/google-map')->with('success',"Add map success!");
+
 
     }
 }
